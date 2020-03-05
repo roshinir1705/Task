@@ -1,0 +1,18 @@
+inp=int(input())
+def square(no):
+  sqroot=no**0.5
+  res=round(sqroot)**2
+  if(res==no):
+    return True
+  else:
+    return False
+def cube(no):
+  curoot=no**(1/3)
+  if(round(curoot)**3==no):
+    return True
+  else:
+    return False
+for c in range(inp,-1,-1):
+  if(cube(c) and square(c)):
+    print(c)
+    break
